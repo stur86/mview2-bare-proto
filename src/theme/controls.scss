@@ -1,0 +1,25 @@
+@import './colors.scss';
+
+$ctrl-padding: 5px;
+$ctrl-bradius: 5px;
+
+$tctrl-min-width: 20px;
+
+.control {
+    padding: $ctrl-padding;
+    border-radius: $ctrl-bradius;
+    border-width: 0;
+    background-color: $mvtext-base;
+    color: $mvgrey-dark;
+}
+
+.control:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 2px $mvgrey-lightest;
+}
+
+.text-control {
+    @extend .control;
+
+    min-width: $tctrl-min-width;
+}

@@ -1,0 +1,5 @@
+@import '../theme/controls.scss';
+
+.MVOption {
+    @extend .text-control;
+}

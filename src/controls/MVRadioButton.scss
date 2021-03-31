@@ -1,0 +1,28 @@
+@import '../theme/controls.scss';
+
+.MVRadioButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MVRadioButton input {
+    display: none;
+}
+
+.MVRadioButton label {
+    @extend .control;
+
+    width: 3px;
+    height: 3px;
+
+    margin-right: 8px;
+    padding: 5px;
+
+    border: 3px solid $mvtext-base;
+    border-radius: 10px;
+}
+
+.MVRadioButton :checked + label {
+    background-color: $mvorange-base;
+}

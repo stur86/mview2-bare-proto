@@ -1,0 +1,6 @@
+$h-padding-spacious: 20px;
+$v-padding-spacious: 5px;
+
+.pad-spacious {
+    padding: $v-padding-spacious $h-padding-spacious;
+}

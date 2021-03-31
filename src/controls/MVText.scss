@@ -1,0 +1,49 @@
+@import '../theme/controls.scss';
+
+$mvtext-margin-size: 8px;
+
+.MVText {
+    display: flex;
+    flex-direction: column;
+}
+
+.MVText.MVTextInline {
+    flex-direction: row;
+}
+
+.MVText-Label {
+    margin-bottom: $mvtext-margin-size;
+}
+
+.MVText-Label.MVTextInline {
+    margin-bottom: 0;
+    margin-right: $mvtext-margin-size;
+}
+
+.MVText-Input {
+    @extend .text-control;
+    margin-right: $mvtext-margin-size;
+}
+
+.MVText-Input.MVTextSubmit {
+    padding-left: 14px;
+}
+
+.MVText-Units {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.MVText-ToSubmit {
+    display: none;
+    position: absolute;
+    left: 2px;
+    top: -4px;
+    color: $mvgrey-darkest;
+    font-size: 30px;
+}
+
+.MVText-ToSubmit.MVTextSubmit {
+    display: inline;
+}

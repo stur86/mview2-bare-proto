@@ -1,0 +1,30 @@
+$mvgrey-base: #222233;
+$mvgrey-dark: darken($mvgrey-base, 5%);
+$mvgrey-darkest: darken($mvgrey-base, 10%);
+$mvgrey-light: lighten($mvgrey-base, 20%);
+$mvgrey-lightest: lighten($mvgrey-base, 40%);
+
+$mvorange-base: #fa8800;
+$mvorange-dark: darken($mvorange-base, 20%);
+$mvorange-darkest: darken($mvorange-base, 40%);
+$mvorange-light: lighten($mvorange-base, 20%);
+$mvorange-lightest: lighten($mvorange-base, 40%);
+
+$mvblue-base: #0088fa;
+$mvblue-dark: darken($mvblue-base, 20%);
+$mvblue-darkest: darken($mvblue-base, 40%);
+$mvblue-light: lighten($mvblue-base, 20%);
+$mvblue-lightest: lighten($mvblue-base, 40%);
+
+$mvtext-base: #eeeeee;
+$mvtext-light: #fafafa;
+$mvtext-dark: #cccccc;
+
+// Helper classes
+.mvorange-base {
+    color: $mvorange-base;
+}
+
+.mvblue-base {
+    color: $mvblue-base;
+}

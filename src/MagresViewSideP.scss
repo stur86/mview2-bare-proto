@@ -1,0 +1,25 @@
+@import './theme/colors.scss';
+@import './MagresViewNav.scss';
+
+$mview-sidep-w: 400px;
+
+.MagresViewSideP {
+    position: fixed;
+    height: 100vh;
+    width: $mview-sidep-w;
+    background-color: $mvgrey-base;
+    color: $mvtext-base;
+    padding-top: $mview-nav-height + 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    box-shadow: -2px 0px 4px 1px $mvgrey-lightest;
+
+    // Animation
+    right: -$mview-sidep-w;
+    transition: right 0.2s;
+}
+
+.MagresViewSideP.open {
+    right: 0px;
+}

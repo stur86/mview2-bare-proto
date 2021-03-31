@@ -1,0 +1,12 @@
+.mock-renderer-div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.mock-renderer-div img {
+    align-self: center;
+}

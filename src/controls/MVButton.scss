@@ -1,0 +1,12 @@
+@import '../theme/controls.scss';
+
+.MVButton {
+    @extend .control;
+
+    min-width: 70px;
+    background: linear-gradient(180deg, $mvtext-light 0%, $mvtext-dark 100%);
+}
+
+.MVButton:active {
+    background: linear-gradient(180deg, $mvtext-dark 0%, $mvtext-light 100%);    
+}

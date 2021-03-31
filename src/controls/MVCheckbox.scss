@@ -1,0 +1,32 @@
+@import '../theme/controls.scss';
+
+.MVCheckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MVCheckbox input {
+    display: none;
+}
+
+.MVCheckbox label {
+    @extend .control;
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 8px;
+    padding: 5px;
+
+    border: 3px solid $mvtext-base;
+}
+
+.MVCheckbox :focus + label {
+    outline: none;
+    box-shadow: 0px 0px 3px 2px $mvgrey-lightest;
+}
+
+.MVCheckbox :checked + label {
+    background-color: $mvorange-base;
+}

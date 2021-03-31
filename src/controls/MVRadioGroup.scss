@@ -1,0 +1,24 @@
+@import '../theme/controls.scss';
+
+.MVRadioGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 10px;
+    border: 1px solid $mvtext-base;
+    border-top: 0px;
+    border-radius: 10px;
+}
+
+.MVRadioGroup > .MVRadioGroupLabel {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.MVRadioGroup > .MVRadioButton {
+    margin-bottom: 10px;
+}
